@@ -89,7 +89,7 @@ nav  ul li:hover .hov-line{
         transform: translate(0, 0);
       }
       to {
-        transform: translate(calc(-100% + (1.5*400px)));
+        transform: translate(calc(-100% + (1*400px)));
       }
     }
   }
