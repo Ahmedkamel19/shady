@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="icon" type="image/x-icon" href="../assets/images/IMG_4846.PNG">
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="about.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <style>
+    [x-cloak] {
+        display: none !important;
+    }
+</style>
+  <title>Shady tarek</title>
+</head>
+
+<body class="bg-current">
+
+  
+
+  <nav class="px-5 bg-black shadow md:flex md:items-center md:justify-between text-white py-4">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl font-[Poppins] cursor-pointer">
+        <a href="index.html"><img class="h-[72px] md:h-24 ps-2 md:ps-10 py-0 "
+          src="../assets/images/IMG_4846.PNG"></a>
+    </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class="bg-black md:flex md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 me-10">
+      <li class="mx-2 my-6 md:my-0">
+        <a href="index.html" class=" me-0">Home</a>
+        <div class="hov-line hidden md:block "></div>
+      </li>
+     
+      <li class="mx-2 my-6 md:my-0">
+        <a href="index.html#packages" class="">Plans</a>
+        <div class="hov-line hidden md:block"></div>
+      </li>
+      <li class="mx-2 my-6 md:my-0">
+        <a href="index.html#faq" class="">FAQ</a>
+        <div class="hov-line hidden md:block"></div>
+      </li>
+      <li class="mx-2 my-6 md:my-0">
+        <a href="payments.html" class="">Payments</a>
+        <div class="hov-line hidden md:block"></div>
+      </li>
+      <li class="mx-2 my-6 md:my-0">
+        <a href="Free Services.html" class="">Free Services</a>
+        <div class="hov-line hidden md:block"></div>
+      </li>
+    
+      <li class="mx-2 my-6 md:my-0">
+        <a href="about us.html" class="">About Us</a>
+        <div class="hov-line hidden md:block"></div>
+      </li>
+      
+      <li class="mx-2 my-6 md:my-0">
+        <a href="aboutar.html" class="flex"  >اللغة العربية</a>
+        <div class="hov-line hidden md:block"></div>
+      </li>
+ 
+    </ul>
+  </nav>
+
+
+
+<section>
+      
+    <div class="flex py-5 flex-col justify-center mx-5 rounded-2xl items-center mb-16 bg-[#0E0D0D]">
+        <h1 class="faq flex justify-center items-center pt-10 pb-16 md:pb-20 text-orange-600 font-medium text-5xl md:text-6xl ">About Shady</h1>
+
+       <div class="md:flex justify-center items-center  ">
+        <div class="flex justify-center items-center mx-auto ">
+          <div class="relative">
+            <button id="toggleButton" class=" ">
+                <span class="toggle-button">
+                    <img id="image1" src="../assets/images/IMG_0720.JPEG.jpg" alt="Photo 1" class="h-96 w-72 md:h-[480px] md:w-96  object-cover ">
+                    <img id="image2" src="../assets/images/aboooo.jpg" alt="Photo 2" class="h-96 w-72 md:h-[480px] md:w-96  object-cover hidden">
+                </span>
+                <p class="text-center text-orange-600 mt-2">Click on me</p>
+            </button>
+        </div>
+        </div>
+        <div class="w-full  md:w-1/2  ">
+            <p class="  mt-16 md:mt-0 text-base  md:text-[12px] font-medium lg:text-base xl:text-[18px]  text-center md:text-left text-slate-100  tracking-wider leading-relaxed mx-10">
+                    A  bodybuilder and online fitness coach and has previously worked as a personal trainer for many years. He aims to aid individuals in achieving their goals and enhancing their health as he was previously experiencing the same problem before transforming his life and more than 500 people into better mental and physical conditions, His goal is to combine his scientific knowledge and practical experience gained through training and online/personal coaching to assist individuals in achieving their fitness objectives through a science-based approach.
+            </p>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<script>
+  const toggleButton = document.getElementById('toggleButton');
+  const image1 = document.getElementById('image1');
+  const image2 = document.getElementById('image2');
+
+  toggleButton.addEventListener('click', () => {
+      if (image1.classList.contains('hidden')) {
+          image1.classList.remove('hidden');
+          image2.classList.add('hidden');
+      } else {
+          image1.classList.add('hidden');
+          image2.classList.remove('hidden');
+      }
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-orange-600">
+  <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div>
+      <img src="../assets/images/IMG_4846.PNG" class="mr-5 h-24 sm:h-24" alt="logo" />
+        <p class="max-w-xs mt-6 text-sm text-black">
+              </p>
+        <div class="flex mt-8  black text-left">
+          <a class="hover:opacity-75  " href target="_blank" rel="noreferrer">
+            <a href="https://www.tiktok.com/@shadytarek.st" target="blank"><i class="fab fa-tiktok me-5 text-xl"></i></a>
+
+          </a>
+          <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+            <a href="https://wa.me/message/HWYCWDRRVEGFE1" target="blank"><i class="fab fa-whatsapp me-5 text-xl"></i></a>
+          </a>
+          <a class="hover:opacity-75" href target="_blank" rel="noreferrer"> 
+            <a href="https://www.instagram.com/shadytarek.st/" target="blank"><i class="fab fa-instagram  me-5 text-xl"></i></a>
+          </a>
+          
+         
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-10 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <p class="font-extrabold text-lg">
+            Quick Links
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-base text-black">
+            <a class="hover:opacity-75" href="Free Services.html"> Free Services </a>
+            <a class="hover:opacity-75" href="index.html#transformations"> Transformations </a>
+            <a class="hover:opacity-75" href="index.html#packages"> plans </a>
+            <a class="hover:opacity-75" href="index.html#faq"> FAQ </a>
+            <a class="hover:opacity-75" href="payments.html"> Payment </a>
+            <a class="hover:opacity-75" href="about us.html"> About us </a>
+
+
+          </nav>
+        </div>
+        <div>
+          <p class="font-extrabold text-lg">
+            Get Help
+
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-base text-black">
+            <a class="hover:opacity-75" href="index.html#Mission"> Our mission </a>
+            <a class="hover:opacity-75" href="Free Services.html"> Free Services </a>
+            <a class="hover:opacity-75" href="index.html#faq"> FAQ </a>
+            <a class="hover:opacity-75" href="payments.html"> Payment options </a>
+
+          </nav>
+        </div>
+        <div>
+          <p class="font-extrabold text-lg">
+            Plans & Packages
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-base text-black">
+            <a class="hover:opacity-75" href="index.html#vip"> VIP plan </a>
+            <a class="hover:opacity-75" href="index.html#nut"> basic plan</a>
+            <a class="hover:opacity-75" href="index.html#basic"> Advanced plan</a>
+          </nav>
+        </div>
+        
+      </div>
+    </div>
+    <p class="flex justify-center items-center text-sm mt-16 text-black ">
+      Copyright @ 2024 By  <span class="text-slate-900 font-extrabold ms-2"> <a href="https://linktr.ee/ahmeddkamel">Ahmed Kamel</a></span>
+
+    </p>
+  </div>
+</footer>
+<script src="index.js"></script>
+
+
+</body>
+</html>
+</body>
+</html>
+
+
+
+

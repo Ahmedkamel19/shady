@@ -1,0 +1,40 @@
+*{
+    font-family: "Arimo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+nav  ul li .hov-line{
+    background-color: #f97316;
+    background-image: linear-gradient(to right, #f97316 ,rgb(192, 83, 16));
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    height: 3px;
+    width: 100%;
+    transform: scaleX(0);
+    border-radius: 5px;
+}
+nav  ul li:nth-child(4) .hov-line{
+    width: 100%;
+    transform: scaleX(1);
+}
+nav  ul li:hover .hov-line{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #000000;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #de6007;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a34e20;
+  }

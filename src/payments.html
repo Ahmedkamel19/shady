@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="icon" type="image/x-icon" href="../assets/images/IMG_4846.PNG">
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="payment.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <style>
+    [x-cloak] {
+        display: none !important;
+    }
+</style>
+  <title>Shady tarek</title>
+</head>
+
+<body class="bg-current">
+
+  
+
+  <nav class="px-5 bg-black shadow md:flex md:items-center md:justify-between text-white py-4">
+    <div class="flex justify-between items-center ">
+      <span class="text-2xl font-[Poppins] cursor-pointer">
+        <a href="index.html"><img class="h-[72px] md:h-24 ps-2 md:ps-10 py-0 "
+          src="../assets/images/IMG_4846.PNG"></a>
+    </span>
+
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+
+    <ul class="bg-black md:flex md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 me-10">
+      <li class="mx-2 my-6 md:my-0">
+        <a href="index.html" class=" me-0">Home</a>
+        <div class="hov-line hidden md:block "></div>
+      </li>
+     
+      <li class="mx-2 my-6 md:my-0">
+        <a href="index.html#packages" class="">Plans</a>
+        <div class="hov-line hidden md:block"></div>
+      </li>
+      <li class="mx-2 my-6 md:my-0">
+        <a href="index.html#faq" class="">FAQ</a>
+        <div class="hov-line hidden md:block"></div>
+      </li>
+      <li class="mx-2 my-6 md:my-0">
+        <a href="payments.html" class="">Payments</a>
+        <div class="hov-line hidden md:block"></div>
+      </li>
+      <li class="mx-2 my-6 md:my-0">
+        <a href="Free Services.html" class="">Free Services</a>
+        <div class="hov-line hidden md:block"></div>
+      </li>
+    
+      <li class="mx-2 my-6 md:my-0">
+        <a href="about us.html" class="">About Us</a>
+        <div class="hov-line hidden md:block"></div>
+      </li>
+      
+      <li class="mx-2 my-6 md:my-0">
+        <a href="paymentar.html" class="flex"  >اللغة العربية</a>
+        <div class="hov-line hidden md:block"></div>
+      </li>
+ 
+    </ul>
+    
+  </nav>
+
+
+  <h1 class="faq flex justify-center items-center pt-10 pb-10 md:pb-00 text-orange-600 font-medium text-[2.5rem] md:text-5xl ">Payment Methods</h1>
+<!-- <section >
+      
+    <div class="flex my-14 flex-col justify-center bg-[#0E0D0D] items-center rounded-3xl w-4/5 mx-auto">
+
+       <div class="md:flex justify-center items-center mx-auto ">
+       
+        <div class="mx-auto">
+            <div class="text-white px-4 text-center md:text-left text-base">
+                <div class="flex py-10 items-center justify-center "><img class="px-2" src="../assets/images/pngwing.com.png" alt="vodafone cash" width="60px"><img class="px-2"  src="../assets/images/instapay.png" alt="instapay"width="60px"><img class="px-2"  src="../assets/images/pngaaa.com-3078140.png" alt="wu"width="60px"></div>
+              <h2>
+               <div class="vodafone py-4 text-orange-600">1. Vodafone cash</div>
+               <div class="">Vodafone cash transaction number: 01098389697<br>
+               After the payment or the money transfer is done, take screenshot of the receipt and send it to the WhatsApp number: 01098389697 <br><br><hr></div>
+               <div class="vodafone py-4 text-orange-600">2. Instapay</div>
+               <div class="pay"> Instapay transaction number: 01006933079<br>
+                After the payment or the money transfer is done, take screenshot of the receipt and send it to the WhatsApp number: 01098389697  <br><br><hr></div>
+
+               <div class="vodafone py-4 text-orange-600">3. Bank transaction</div>
+               <div class="pay"> Send us a message on whatsapp and we will send you the details. <br>
+                 After the payment or the money transfer is done, take screenshot of the receipt and send it to the WhatsApp number: 01098389697 <br><br><hr></div>
+               <div class="vodafone py-4 text-orange-600">4. Western Union</div>
+               <div class="pay"> Send us a message on whatsapp and we will send you the details. <br>
+                 After the payment or the money transfer is done, take screenshot of the receipt and send it to the WhatsApp number: 01098389697 <br><br></div>
+              
+               
+             </h2>
+             <div class="what">
+                <button class="text-center  rounded-lg border-2 border-orange-500 px-5 py-2  mb-3 font-bold text-xs text-orange-500 transition duration-200 hover:bg-orange-600 hover:text-white">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/message/HWYCWDRRVEGFE1">  Start now</a>
+                </button>
+     
+             </div>
+
+             
+            </div>
+            </div>
+    </div>
+</div>
+</section> -->
+
+
+
+
+
+
+
+
+<div class="flex items-center bg-black mb-10  py-20" style="font-family: 'Muli', sans-serif;">
+  <div class="container ml-auto mr-auto flex flex-wrap items-start">
+    
+    <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+      <div class="bg-purple-900 rounded-lg m-h-64 p-2 mx-5 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+       <img src="../assets/images/instapay.png" alt="instapay" class="w-20 mx-auto">
+        <div class="rounded-lg p-4 bg-purple-900 flex flex-col">
+          <div>
+            <h5 class="text-white text-sm font-bold leading-none text-center">
+              Instapay Transaction
+            </h5>
+          </div>
+          <div class="flex items-center bg-white rounded-lg mt-4 ">
+            <p class="p-2 text-center text-sm text-purple-900">Instapay transaction number is <br>01006933079. <br><span class="pt-5 text-sm">After the payment or the money transfer is done, take screenshot of the receipt and send it to the WhatsApp number : <br> 01098389697</span></p>
+          </div>
+          
+          
+        </div>
+        <div class=" text-center">
+          <button class="text-center  rounded-lg border-2 border-white px-5 py-2  mb-3 font-bold text-xs text-white transition duration-200 hover:bg-purple-950 hover:text-white">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/message/HWYCWDRRVEGFE1">  Contact us now</a>
+        </button>
+        </div>
+      </div>
+    </div>
+    <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+      <div class="bg-red-700 rounded-lg m-h-64 p-2 mx-5 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+       <img src="../assets/images/pngaaa.com-3078140.png" alt="instapay" class="w-20 mx-auto">
+        <div class="rounded-lg p-4 bg-red-700 flex flex-col">
+          <div>
+            <h5 class="text-white text-sm font-bold leading-none text-center">
+              Vodafone Cash Transaction
+            </h5>
+          </div>
+          <div class="flex items-center bg-white rounded-lg mt-4 ">
+            <p class="p-2 text-center text-sm text-red-700">Vodafone cash  number is <br>01098389697. <br><span class="pt-5 text-sm">After the payment or the money transfer is done, take screenshot of the receipt and send it to the WhatsApp number : <br> 01098389697</span></p>
+          </div>
+          
+          
+        </div>
+        <div class=" text-center">
+          <button class="text-center  rounded-lg border-2 border-white px-5 py-2  mb-3 font-bold text-xs text-white transition duration-200 hover:bg-red-800 hover:text-white">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/message/HWYCWDRRVEGFE1">  Contact us now</a>
+        </button>
+        </div>
+      </div>
+    </div>
+    <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+      <div class="bg-[#0E0D0D] rounded-lg m-h-64 p-2 mx-5 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+       <img src="../assets/images/pngwing.com.png" alt="instapay" class="w-20 mx-auto">
+        <div class="rounded-lg p-4 bg-[#0E0D0D] flex flex-col">
+          <div>
+            <h5 class="text-yellow-400 text-sm font-bold leading-none text-center">
+              Western Union Transaction
+            </h5>
+          </div>
+          <div class="flex items-center bg-yellow-400 rounded-lg mt-4 ">
+            <p class="p-2 text-center text-sm text-[#0E0D0D]">Send us a message on whatsapp and we will send you the details <br><span class="pt-5 text-sm">After the payment or the money transfer is done, take screenshot of the receipt and send it to the WhatsApp number: 01098389697</span></p>
+          </div>
+          
+        </div>
+        <div class=" text-center">
+          <button class="text-center  rounded-lg border-2 border-yellow-400 px-5 py-2  mb-3 font-bold text-xs text-yellow-400 transition duration-200 hover:bg-black hover:text-yellow-400">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/message/HWYCWDRRVEGFE1">  Contact us now</a>
+        </button>
+        </div>
+      </div>
+    </div>
+    <div class="w-full md:w-1/2 lg:w-1/4 pl-5 pr-5 mb-5 lg:pl-2 lg:pr-2">
+      <div class="bg-[#87333d] rounded-lg m-h-64 p-2 mx-5 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+       <img src="../assets/images/unnamed (1).png" alt="instapay" class="w-20 mx-auto">
+        <div class="rounded-lg p-4 bg[#87333d] flex flex-col">
+          <div>
+            <h5 class="text-white text-sm font-bold leading-none text-center">
+              Bank Transaction
+            </h5>
+          </div>
+          <div class="flex items-center bg-white rounded-lg mt-4 ">
+            <p class="p-2 text-center text-sm text-[#87333d]">Send us a message on whatsapp and we will send you the details <br><span class="pt-5 text-sm">After the payment or the money transfer is done, take screenshot of the receipt and send it to the WhatsApp number: 01098389697</span></p>
+          </div>
+          
+          
+        </div>
+        <div class=" text-center">
+          <button class="text-center  rounded-lg border-2 border-white px-5 py-2  mb-3 font-bold text-xs text-white transition duration-200 hover:bg-[#942c38] hover:text-white">
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> <a href="https://wa.me/message/HWYCWDRRVEGFE1">  Contact us now</a>
+        </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="bg-orange-600">
+  <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div>
+      <img src="../assets/images/IMG_4846.PNG" class="mr-5 h-24 sm:h-24" alt="logo" />
+        <p class="max-w-xs mt-6 text-sm text-black">
+              </p>
+        <div class="flex mt-8  black text-left">
+          <a class="hover:opacity-75  " href target="_blank" rel="noreferrer">
+            <a href="https://www.tiktok.com/@shadytarek.st" target="blank"><i class="fab fa-tiktok me-5 text-xl"></i></a>
+
+          </a>
+          <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+            <a href="https://wa.me/message/HWYCWDRRVEGFE1" target="blank"><i class="fab fa-whatsapp me-5 text-xl"></i></a>
+          </a>
+          <a class="hover:opacity-75" href target="_blank" rel="noreferrer"> 
+            <a href="https://www.instagram.com/shadytarek.st/" target="blank"><i class="fab fa-instagram  me-5 text-xl"></i></a>
+          </a>
+          
+         
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-10 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <p class="font-extrabold text-lg">
+            Quick Links
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-base text-black">
+            <a class="hover:opacity-75" href="Free Services.html"> Free Services </a>
+            <a class="hover:opacity-75" href="index.html#transformations"> Transformations </a>
+            <a class="hover:opacity-75" href="index.html#packages"> plans </a>
+            <a class="hover:opacity-75" href="index.html#faq"> FAQ </a>
+            <a class="hover:opacity-75" href="payments.html"> Payment </a>
+            <a class="hover:opacity-75" href="about us.html"> About us </a>
+
+
+          </nav>
+        </div>
+        <div>
+          <p class="font-extrabold text-lg">
+            Get Help
+
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-base text-black">
+            <a class="hover:opacity-75" href="index.html#Mission"> Our mission </a>
+            <a class="hover:opacity-75" href="Free Services.html"> Free Services </a>
+            <a class="hover:opacity-75" href="index.html#faq"> FAQ </a>
+            <a class="hover:opacity-75" href="payments.html"> Payment options </a>
+
+          </nav>
+        </div>
+        <div>
+          <p class="font-extrabold text-lg">
+            Plans & Packages
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-base text-black">
+            <a class="hover:opacity-75" href="index.html#vip"> VIP plan </a>
+            <a class="hover:opacity-75" href="index.html#basic"> Advanced plan</a>
+            <a class="hover:opacity-75" href="index.html#nut"> Basic plan</a>
+          </nav>
+        </div>
+        
+      </div>
+    </div>
+    <p class="flex justify-center items-center text-sm mt-16 text-black ">
+      Copyright @ 2024 By  <span class="text-slate-900 font-extrabold ms-2"> <a href="https://linktr.ee/ahmeddkamel">Ahmed Kamel</a></span>
+
+    </p>
+  </div>
+</footer>
+<script src="index.js"></script>
+
+
+</body>
+</html>
+</body>
+</html>
+
+
+
+

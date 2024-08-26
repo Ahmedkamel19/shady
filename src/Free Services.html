@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <link rel="icon" type="image/x-icon" href="../assets/images/IMG_4846.PNG">
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="free.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  
+  <style>
+    [x-cloak] {
+        display: none !important;
+    }
+</style>
+  <title>Shady tarek</title>
+</head>
+
+<body class="bg-current">
+
+  
+
+
+    <nav class="px-5 bg-black shadow md:flex md:items-center md:justify-between text-white py-4">
+        <div class="flex justify-between items-center ">
+          <span class="text-2xl font-[Poppins] cursor-pointer">
+            <a href="index.html"><img class="h-[72px] md:h-24 ps-2 md:ps-10 py-0 "
+              src="../assets/images/IMG_4846.PNG"></a>
+        </span>
+    
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+    
+        <ul class="bg-black md:flex md:items-center z-[1] md:z-auto md:static absolute w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 me-10">
+          <li class="mx-2 my-6 md:my-0">
+            <a href="index.html" class=" me-0">Home</a>
+            <div class="hov-line hidden md:block "></div>
+          </li>
+         
+          <li class="mx-2 my-6 md:my-0">
+            <a href="index.html#packages" class="">Plans</a>
+            <div class="hov-line hidden md:block"></div>
+          </li>
+          <li class="mx-2 my-6 md:my-0">
+            <a href="index.htm#faq" class="">FAQ</a>
+            <div class="hov-line hidden md:block"></div>
+          </li>
+          <li class="mx-2 my-6 md:my-0">
+            <a href="payments.html" class="">Payments</a>
+            <div class="hov-line hidden md:block"></div>
+          </li>
+          <li class="mx-2 my-6 md:my-0">
+            <a href="Free Services.html" class="">Free Services</a>
+            <div class="hov-line hidden md:block"></div>
+          </li>
+        
+          <li class="mx-2 my-6 md:my-0">
+            <a href="about us.html" class="">About Us</a>
+            <div class="hov-line hidden md:block"></div>
+          </li>
+          
+          <li class="mx-2 my-6 md:my-0">
+            <a href="Free servicesar.html" class="flex"  >اللغة العربية</a>
+            <div class="hov-line hidden md:block"></div>
+          </li>
+     
+        </ul>
+        
+      </nav>
+
+
+<section id="alt" class="bg-black pb-20" >
+
+  <h1 class="alt flex justify-center items-center pt-12 pb-6 text-orange-600 font-medium text-4xl md:text-6xl ">Alternative Food</h1>
+
+
+<div class="container mx-auto p-6 bg-[#0E0D0D]   rounded-lg shadow-md w-[85%] m-10 px-10 md:w-4/6  text-white">
+  <h1 class="text-xl font-semibold mb-4 text-center tracking-wide">Food Alternatives Calculator</h1>
+  
+  <div class="mb-4 flex-wrap flex justify-center items-center md:items-start md:justify-start ">
+      <button class="food-type-btn me-2 mt-3 px-2 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600 focus:outline-none text-xs" data-type="protein">Protein</button>
+      <button class="food-type-btn me-2 mt-3 px-2 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600 focus:outline-none text-xs" data-type="carbohydrates">Carbohydrate</button>
+      <button class="food-type-btn me-2 mt-3 px-2 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600 focus:outline-none text-xs" data-type="fats">Healthy Fat</button>
+      <button class="food-type-btn me-2 mt-3 px-2 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600 focus:outline-none text-xs" data-type="Legumes">Legumes</button>
+      <button class="food-type-btn me-2 mt-3 px-2 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600 focus:outline-none text-xs" data-type="fruits">Fruit</button>
+      <button class="food-type-btn me-2 mt-3 px-2 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600 focus:outline-none text-xs" data-type="vegetables">Vegetable</button>
+      <button class="food-type-btn me-2 mt-3 px-2 py-2 rounded-md bg-orange-500 text-white hover:bg-orange-600 focus:outline-none text-xs" data-type="milks">Milk</button>
+  </div>
+
+  <form id="calculator-form" class="space-y-4 text-black">
+      <div>
+          <label for="food-type" class="block text-sm font-medium text-white">Select Food</label>
+          <select id="food-type" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm">
+          </select>
+      </div>
+
+      <div>
+          <label for="amount" class="block text-sm font-medium text-white">Amount (grams)</label>
+          <input type="number" id="amount" min="1" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm">
+      </div>
+
+      <div>
+          <label for="alternative-food" class="block text-sm font-medium text-white">Select Alternative Food</label>
+          <select id="alternative-food" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-orange-500 focus:border-orange-500 sm:text-sm">
+          </select>
+      </div>
+
+      <div>
+          <button type="button" id="calculate-btn" class="w-full bg-orange-500 text-white py-2 px-4 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500">Calculate</button>
+      </div>
+  </form>
+
+  <div id="result" class="mt-6 p-4 bg-black border border-gray-300 rounded-md hidden">
+      <h2 class="text-lg font-semibold mb-2 text-orange-600">Comparison Result</h2>
+      <p id="original-food" class="text-white"></p>
+      <br><hr>
+      <br>
+      <p id="alternative-food-result" class="text-white"></p>
+  </div>
+
+</div>
+</section>
+
+
+
+<section class="bg-black" >
+    <h1 class="alt flex justify-center items-center pt-12  text-orange-600 font-medium text-4xl md:text-6xl ">Calories Calculator</h1>
+
+
+    <div class="flex justify-center items-center">
+        <div class="bg-[#0E0D0D] p-8 rounded-lg shadow-lg md:w-4/6 w-full m-5 md:m-20 ">
+            <form id="calories-form">
+                <div class="mb-4">
+                    <label for="sex" class="block text-white">Sex</label>
+                    <select id="sex" class="mt-1 block w-full p-2 border rounded">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="age" class="block text-white">Age</label>
+                    <input type="number" id="age" class="mt-1 block w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="weight" class="block text-white">Weight (kg)</label>
+                    <input type="number" id="weight" class="mt-1 block w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="height" class="block text-white">Height (cm)</label>
+                    <input type="number" id="height" class="mt-1 block w-full p-2 border rounded" required>
+                </div>
+                <div class="mb-4">
+                    <label for="activity-level" class="block text-white">Activity Level</label>
+                    <select id="activity-level" class="mt-1 block w-full p-2 border rounded">
+                        <option value="sedentary">Sedentary (little or no exercise)</option>
+                        <option value="light">Lightly active (light exercise / sport 1-3 days a week)</option>
+                        <option value="moderate">Moderately active (moderate exercise / sport 3-5 days a week)</option>
+                        <option value="active">Very Active (hard exercise / sport 6-7 days a week)</option>
+                        <option value="very_active">extra active (very hard exercise / sports and physical job)</option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label for="diet-target" class="block text-white">Diet Target</label>
+                    <select id="diet-target" class="mt-1 block w-full p-2 border rounded">
+                        <option value="extreme-lose">Extreme Lose weight</option>
+                        <option value="lose">Lose weight</option>
+                        <option value="maintain">Maintain weight</option>
+                        <option value="gain">Gain weight</option>
+                        <option value="extreme-gain">Extreme Gain weight</option>
+                    </select>
+                </div>
+                <button type="submit" class="w-full bg-orange-500 text-white p-2 rounded hover:bg-orange-600">Calculate</button>
+            </form>
+            <div id="result" class="mt-6 text-center">
+                <div class="bg-orange-100 border border-orange-300 p-4 rounded-lg shadow-md">
+                    <p id="result-text" class="text-xl font-semibold text-orange-600"></p>
+                    <p class="text-gray-600 mt-2">This is your estimated daily calorie requirement based on your inputs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="bg-black" >
+      <h1 class="alt flex justify-center items-center pt-12  text-orange-600 font-medium text-4xl md:text-6xl ">healthy recipes E-book </h1>
+      <h3 class="text-2xl text-white text-center mt-3"> ( Free Edition )</h3>
+  
+      <div class="flex justify-center items-center">
+          <div class="bg-[#0E0D0D] p-8 rounded-lg shadow-lg md:w-4/6 w-full m-5 md:m-20 ">
+              <a href=""> <img class="w-52 mx-auto" src="../assets/images/ebook.jpg" alt="E-book"></a>
+          </div>
+      </div>
+      </section>
+  
+
+
+      <footer class="bg-orange-600">
+        <div class="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div>
+      <img src="../assets/images/IMG_4846.PNG" class="mr-5 h-24 sm:h-24" alt="logo" />
+        <p class="max-w-xs mt-6 text-sm text-black">
+           </p>
+        <div class="flex mt-8  black text-left">
+          <a class="hover:opacity-75  " href target="_blank" rel="noreferrer">
+            <a href="https://www.tiktok.com/@shadytarek.st" target="blank"><i class="fab fa-tiktok me-5 text-xl"></i></a>
+
+          </a>
+          <a class="hover:opacity-75" href target="_blank" rel="noreferrer">
+            <a href="https://wa.me/message/HWYCWDRRVEGFE1" target="blank"><i class="fab fa-whatsapp me-5 text-xl"></i></a>
+          </a>
+          <a class="hover:opacity-75" href target="_blank" rel="noreferrer"> 
+            <a href="https://www.instagram.com/shadytarek.st/" target="blank"><i class="fab fa-instagram  me-5 text-xl"></i></a>
+          </a>
+          
+         
+        </div>
+      </div>
+      <div class="grid grid-cols-1 gap-10 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
+        <div>
+          <p class="font-extrabold text-lg">
+            Quick Links
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-base text-black font-extrabold">
+            <a class="hover:opacity-75" href="Free Services.html"> Free Services </a>
+            <a class="hover:opacity-75" href="index.html#transformations"> Transformations </a>
+            <a class="hover:opacity-75" href="#packages"> plans </a>
+            <a class="hover:opacity-75" href="#faq"> FAQ </a>
+            <a class="hover:opacity-75" href="payments.html"> Payment </a>
+            <a class="hover:opacity-75" href="about us.html"> About us </a>
+
+
+          </nav>
+        </div>
+        <div>
+          <p class="font-extrabold text-lg ">
+            Get Help
+
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-base text-black">
+            <a class="hover:opacity-75" href="#Mission"> Our mission </a>
+            <a class="hover:opacity-75" href="Free Services.html"> Free Services </a>
+            <a class="hover:opacity-75" href="#faq"> FAQ </a>
+            <a class="hover:opacity-75" href="payments.html"> Payment options </a>
+
+          </nav>
+        </div>
+        <div>
+          <p class="font-extrabold text-lg">
+            Plans & Packages
+          </p>
+          <nav class="flex flex-col mt-4 space-y-2 text-base text-black">
+            <a class="hover:opacity-75" href="#vip"> VIP plan </a>
+            <a class="hover:opacity-75" href="#basic"> Advanced plan</a>
+            <a class="hover:opacity-75" href="#nut"> Basic plan</a>
+          </nav>
+        </div>
+        
+      </div>
+    </div>
+    <p class="flex justify-center items-center text-sm mt-16 text-black ">
+      Copyright @ 2024 By  <span class="text-slate-900 font-extrabold ms-2"> <a href="https://linktr.ee/ahmeddkamel">Ahmed Kamel</a></span>
+
+    </p>
+  </div>
+</footer>
+<script src="jquery-3.7.1.min.js"></script>
+<script src="index.js"></script>
+<script src="food.js"></script>
+<script src="script.js"></script>
+
+
+
+</body>
+</html>
+</body>
+</html>
+
+
